@@ -1,3 +1,40 @@
-.hero{
-    background-color: red;
+/* .hero {
+  background-color: red;
+} */
+
+@media screen and (min-width: 1100px) {
+  /* true 1 */
+  /* false 0 */
+  /* .hero {
+    background-color: blue;
+  } */
+}
+
+@media print and (min-width: 1100px) {
+  /* true 1 */
+  /* false 0 */
+  /* .hero {
+    background-color: blue;
+  } */
+}
+
+.html-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.css-image {
+  width: 200px;
+  height: 230px;
+  /* background: url(../img/mark.jpg) no-repeat center/cover; */
+  background: url(../img/mark.jpg);
+
+  background-size: cover;
+  background-position: center;
+
+  background-color: red;
+  background-repeat: no-repeat;
+  
 }
