@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/fs-102-vite/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/fs-102-vite/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fs-102-vite/assets/index-6e67b436.css">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/fs-102-vite/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla App Template</title>
+  
+  <script type="module" crossorigin src="/fs-102-vite/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/fs-102-vite/assets/vendor-aa49a3db.js">
+  <link rel="stylesheet" href="/fs-102-vite/assets/index-0ec88a26.css">
+</head>
+
+<body>
+  <header class="header">
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
@@ -24,66 +27,67 @@
   </nav>
 </header>
 
-    <main>
-      <section class="hero">
+  <main>
+    <section class="hero">
     HERO SECTION
 </section>
 
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+    <section class="slider">
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper my-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slider-item">Slide 1</div>
+                <div class="swiper-slide slider-item">Slide 2</div>
+                <div class="swiper-slide slider-item">Slide 3</div>
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+                <div class="swiper-slide slider-item">Slide 11</div>
+                <div class="swiper-slide slider-item">Slide 22</div>
+                <div class="swiper-slide slider-item">Slide 33</div>
+               
+            </div>
+            <!-- If we need pagination -->
+            <ul class="swiper-pagination"></ul>
+
+            <!-- If we need navigation buttons -->
+            <button type="button" class="swiper-button-prev"></button>
+            <button type="button" class="swiper-button-next"></button>
+
+        </div>
     </div>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/fs-102-vite/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
 </section>
 
-    </main>
-    <footer class="footer">
+    <section class="aos-test">
+      <div class="container">
+        <h2 data-aos="fade-up">ЗАГОЛОВОК 1</h2>
+      </div>
+    </section>
+
+    <section class="aos-test">
+      <div class="container">
+        <h2 data-aos="fade-left">ЗАГОЛОВОК 2</h2>
+        <img data-aos="fade-up" data-aos-delay="800" width="300" height="500" src="https://images.unsplash.com/photo-1598128558393-70ff21433be0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+    </section>
+
+    <section class="aos-test">
+      <div class="container">
+        <h2 data-aos="fade-right">ЗАГОЛОВОК 3</h2>
+      </div>
+    </section>
+
+    <!-- Loads the specified .html file -->
+  </main>
+  <footer class="footer">
     <div class="container">
         ФУТЕР
     </div>
 </footer>
 
-    
-  </body>
+  
+</body>
+
 </html>
