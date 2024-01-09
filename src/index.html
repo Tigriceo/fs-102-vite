@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load ="partials/header.html" />
-    <main>
-      <load ="partials/sections/section-hero.html" />
 
-      <!-- Loads the specified .html file -->
-      <load ="partials/vite-promo.html" />
-    </main>
-    <load ="partials/footer.html" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla App Template</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+<body>
+  <load="partials/header.html" />
+  <main>
+    <load="partials/sections/section-hero.html" />
+
+    <load="partials/sections/section-slider.html" />
+
+    <section class="aos-test">
+      <div class="container">
+        <h2 data-aos="fade-up">ЗАГОЛОВОК 1</h2>
+      </div>
+    </section>
+
+    <section class="aos-test">
+      <div class="container">
+        <h2 data-aos="fade-left">ЗАГОЛОВОК 2</h2>
+        <img data-aos="fade-up" data-aos-delay="800" width="300" height="500" src="https://images.unsplash.com/photo-1598128558393-70ff21433be0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      </div>
+    </section>
+
+    <section class="aos-test">
+      <div class="container">
+        <h2 data-aos="fade-right">ЗАГОЛОВОК 3</h2>
+      </div>
+    </section>
+
+    <!-- Loads the specified .html file -->
+  </main>
+  <load="partials/footer.html" />
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

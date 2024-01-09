@@ -1,4 +1,2 @@
-let varible = 100;
-if(varible == 101){
-    console.log('true');
-}
+import './js/swiper-config';
+import './js/aos-config';

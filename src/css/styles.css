@@ -5,9 +5,11 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('../../node_modules/swiper/swiper-bundle.min.css');
+@import url('../../node_modules/aos/dist/aos.css');
 @import url('./header.css');
 @import url('./sections/sections-hero.css');
+@import url('./sections/sections-slider.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -23,4 +25,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.aos-test {
+  padding: 150px 0;
 }
